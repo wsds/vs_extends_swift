@@ -1,0 +1,26 @@
+{
+	"name": "candy",
+	"displayName": "candy_language",
+	"description": "candy language",
+	"version": "0.0.1",
+	"publisher": "wsds",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "open_swift",
+			"aliases": ["Candy", "open_swift"],
+			"extensions": [".ss",".cd",".Candy"],
+			"configuration": "./open_swift.configuration.json"
+		}],
+		"grammars": [{
+			"language": "open_swift",
+			"scopeName": "source.open_swift",
+			"path": "./syntaxes/open_swift.tmLanguage"
+		}]
+	}
+}
