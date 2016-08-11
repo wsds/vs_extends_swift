@@ -1,0 +1,29 @@
+{
+	"name": "theme-hacker",
+	"displayName": "Hacker Style Themes",
+	"description": "Best hacker style theme in VS code.",
+	"version": "0.1.8",
+	"publisher": "wsds",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Hacker",
+				"uiTheme": "vs-dark",
+				"path": "./themes/aaaa.tmTheme"
+			}
+		]
+	},
+	"repository": "https://github.com/wsds/vs_extends_swift",
+	"icon": "icon.png",
+	"__metadata": {
+		"id": "2505b800-b73d-4cd5-ab8c-e95dc7b5a045",
+		"publisherId": "21bddc68-763c-4987-95cc-0facfc29cf85",
+		"publisherDisplayName": "bin70"
+	}
+}
