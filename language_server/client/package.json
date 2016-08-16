@@ -1,10 +1,10 @@
 {
-	"name": "language-client-example",
-	"description": "VSCode part of a language server",
-	"author": "Microsoft Corporation",
+	"name": "open-swift",
+	"description": "Best hacker style demo language server in VS code",
+	"author": "wsds",
 	"license": "MIT",
-	"version": "0.0.1",
-	"publisher": "vscode",
+	"version": "0.2.2",
+	"publisher": "wsds",
 	"engines": {
 		"vscode": "^0.10.10"
 	},
@@ -28,12 +28,11 @@
 				}
 			}
 		}
-	},	
+	},
 	"scripts": {
 		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
 		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./",
 		"postinstall": "node ./node_modules/vscode/bin/install"
-
 	},
 	"devDependencies": {
 		"typescript": "^1.8.9",
@@ -41,5 +40,7 @@
 	},
 	"dependencies": {
 		"vscode-languageclient": "^2.2.1"
-	}
+	},
+	"icon": "icon.png",
+	"displayName": "Open Swift Demo"
 }

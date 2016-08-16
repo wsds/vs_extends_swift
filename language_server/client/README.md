@@ -1,13 +1,8 @@
 # README
-## This is the README for your extension "vscode" 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+This is the best hacker style demo language server in VS code.
 
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
+![](http://upload-images.jianshu.io/upload_images/2422165-afb506868ab4df16.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+Developing is in progress, PLS wait. Thanks for your patient.
 
 ** Enjoy!**
