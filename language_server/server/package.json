@@ -1,8 +1,8 @@
 {
-	"name": "language-server-example",
-	"description": "Example implementation of a language server in node.",
+	"name": "language-server-open-swift",
+	"description": "open-swift implementation of a language server in node.",
 	"version": "0.0.1",
-	"author": "Microsoft Corporation",
+	"author": "wsds",
 	"license": "MIT",
 	"engines": {
 		"node": "*"

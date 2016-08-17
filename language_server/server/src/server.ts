@@ -59,10 +59,7 @@ documents.onDidChangeContent((change) => {
 
 // The settings interface describe the server relevant settings part
 interface Settings {
-	languageServerExample: ExampleSettings;
-	swift: {
-		server: String
-	}
+	openswift: ExampleSettings;
 }
 
 // These are the example settings we defined in the client's package.json
@@ -75,12 +72,16 @@ interface ExampleSettings {
 let maxNumberOfProblems: number;
 // The settings have changed. Is send on server activation
 // as well.
+
+var serverIP = "";
 connection.onDidChangeConfiguration((change) => {
 	let settings = <Settings>change.settings;
-	maxNumberOfProblems = settings.languageServerExample.maxNumberOfProblems || 100;
+	maxNumberOfProblems = settings.openswift.maxNumberOfProblems || 100;
 	// Revalidate any open text documents
 	documents.all().forEach(validateTextDocument);
-	connection.console.log('settings: ' + settings.swift.server);
+	serverIP = settings.openswift["server"];
+	connection.console.log('settings: ' + serverIP);
+	connection.console.log(JSON.stringify(settings));
 });
 
 function validateTextDocument(textDocument: TextDocument): void {
@@ -132,9 +133,11 @@ connection.onCompletion((textDocumentPosition: TextDocumentPositionParams): Comp
 	]
 });
 
+var hoverIdex = 16558;
 connection.onHover(textDocumentPositionParams => {
     var document = documents.get(textDocumentPositionParams.textDocument.uri);
-	var result = { contents: "You hovered on me." }
+	var result = { contents: "You hovered on me." + hoverIdex };
+	hoverIdex++;
     return result;
 });
 

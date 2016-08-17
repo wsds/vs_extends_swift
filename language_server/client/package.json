@@ -21,10 +21,20 @@
 			"type": "object",
 			"title": "Example configuration",
 			"properties": {
-				"languageServerExample.maxNumberOfProblems": {
+				"openswift.aaaa": {
 					"type": "number",
-					"default": 100,
+					"default": 66666,
 					"description": "Controls the maximum number of problems produced by the server."
+				},
+				"openswift.maxNumberOfProblems": {
+					"type": "number",
+					"default": 90,
+					"description": "Controls the maximum number of problems produced by the server."
+				},
+				"openswift.server": {
+					"type": "string",
+					"default": "120.0.0.1",
+					"description": "swift server IP address."
 				}
 			}
 		}
