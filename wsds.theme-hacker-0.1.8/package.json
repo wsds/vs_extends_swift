@@ -2,7 +2,7 @@
 	"name": "theme-hacker",
 	"displayName": "Hacker Style Themes",
 	"description": "Best hacker style theme in VS code.",
-	"version": "0.1.8",
+	"version": "0.2.0",
 	"publisher": "wsds",
 	"engines": {
 		"vscode": "^0.10.1"
